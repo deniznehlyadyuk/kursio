@@ -6,12 +6,7 @@ namespace Kursio.Common.Infrastructure.QueryBuilding;
 
 internal sealed class QueryBuilder : IQueryBuilder
 {
-    private readonly List<IQueryStrategy> _strategies;
-
-    public QueryBuilder()
-    {
-        _strategies = [];
-    }
+    private readonly List<IQueryStrategy> _strategies = [];
 
     public void AddStrategy(IQueryStrategy strategy)
     {

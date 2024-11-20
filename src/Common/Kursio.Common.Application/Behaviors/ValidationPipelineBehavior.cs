@@ -13,7 +13,7 @@ internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
     where TRequest : IBaseCommand
 {
     public async Task<TResponse> Handle(
-        TRequest request, 
+        TRequest request,
         RequestHandlerDelegate<TResponse> next,
         CancellationToken cancellationToken)
     {
@@ -66,6 +66,8 @@ internal sealed class ValidationPipelineBehavior<TRequest, TResponse>(
         return validationFailures;
     }
 
-    private static ValidationError CreateValidationError(ValidationFailure[] validationFailures) =>
-        new(validationFailures.Select(f => Error.Problem(f.ErrorCode, f.ErrorMessage)).ToArray());
+    private static ValidationError CreateValidationError(ValidationFailure[] validationFailures)
+    {
+        return new ValidationError(validationFailures.Select(f => Error.Problem(f.ErrorCode, f.ErrorMessage)).ToArray());
+    }
 }

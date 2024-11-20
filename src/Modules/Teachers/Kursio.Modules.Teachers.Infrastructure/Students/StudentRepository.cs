@@ -11,7 +11,7 @@ internal sealed class StudentRepository(TeachersDbContext dbContext) : IStudentR
 
     public async Task InsertAsync(Student student, CancellationToken cancellationToken = default)
     {
-        await dbContext.AddAsync(student, cancellationToken); 
+        await dbContext.AddAsync(student, cancellationToken);
     }
 
     public void Remove(Student student)

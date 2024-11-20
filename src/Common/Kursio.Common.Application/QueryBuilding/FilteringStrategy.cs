@@ -39,7 +39,7 @@ public sealed class FilteringStrategy(
         parameters = [];
 
         foreach (QueryBuilderFilterGroup group in filterGroups)
-        {   
+        {
             List<string> groupFilters = [];
 
             foreach (QueryBuilderFilter filter in group.Filters)

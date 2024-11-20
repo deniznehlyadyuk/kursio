@@ -68,7 +68,7 @@ internal sealed class GetStudentsQueryHandler(
             logger.LogInformation("Students fetching");
         }
 
-        List<StudentResponse> students = 
+        List<StudentResponse> students =
             (await connection.QueryAsync<StudentResponse>(buildResult.Value.Query, buildResult.Value.Parameters))
                 .AsList();
 
