@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Kursio.Common.Application\Kursio.Common.Application.csproj" />
+    <ProjectReference Include="..\Kursio.Modules.Students.Domain\Kursio.Modules.Students.Domain.csproj" />
+    <ProjectReference Include="..\Kursio.Modules.Students.IntegrationEvents\Kursio.Modules.Students.IntegrationEvents.csproj" />
+  </ItemGroup>
+
+</Project>

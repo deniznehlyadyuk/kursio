@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Kursio.Common.Infrastructure\Kursio.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Kursio.Modules.Teachers.Application\Kursio.Modules.Teachers.Application.csproj" />
+    <ProjectReference Include="..\Kursio.Modules.Teachers.Presentation\Kursio.Modules.Teachers.Presentation.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\Migrations\" />
+  </ItemGroup>
+
+</Project>
