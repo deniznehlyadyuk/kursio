@@ -1,0 +1,148 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{820519FF-FE7D-45D6-8501-ABE73F20AC5E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DE948FD6-8356-44B2-9A52-5A7A0C297D02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4F9C8574-93BB-4291-9A7A-169456B57CD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{2AAEF9D0-72DD-4017-ACF9-CC5939C4C8F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Students", "Students", "{5341A4EB-862E-4B5F-B8A5-730193333919}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Api", "src\API\Kursio.Api\Kursio.Api.csproj", "{978920BB-FC07-445F-A880-8AF64971403E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{C7A0B8D1-BB05-4FEA-ACD3-C40EA33DF335}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Students.Domain", "src\Modules\Students\Kursio.Modules.Students.Domain\Kursio.Modules.Students.Domain.csproj", "{95CA12B5-20F8-4996-9D31-760A723487F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Students.Application", "src\Modules\Students\Kursio.Modules.Students.Application\Kursio.Modules.Students.Application.csproj", "{D5012889-2D64-483D-84E8-3D7B4EFD3274}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Students.Presentation", "src\Modules\Students\Kursio.Modules.Students.Presentation\Kursio.Modules.Students.Presentation.csproj", "{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Students.Infrastructure", "src\Modules\Students\Kursio.Modules.Students.Infrastructure\Kursio.Modules.Students.Infrastructure.csproj", "{ADC04675-1B54-47E7-8B77-1E80422D75C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{67A5750F-817A-407F-ABD3-FF49896AE9BB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Common.Application", "src\Common\Kursio.Common.Application\Kursio.Common.Application.csproj", "{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Common.Domain", "src\Common\Kursio.Common.Domain\Kursio.Common.Domain.csproj", "{2998ACE9-7619-4273-9FB2-D3DF6224FE74}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Common.Infrastructure", "src\Common\Kursio.Common.Infrastructure\Kursio.Common.Infrastructure.csproj", "{363B4A28-D209-44F3-814D-3AF3A78B6E8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Common.Presentation", "src\Common\Kursio.Common.Presentation\Kursio.Common.Presentation.csproj", "{57131A4F-0C68-4353-843F-AFA53592255A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Teachers", "Teachers", "{FC6F479B-8A5D-4E95-966B-BD589790D541}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Teachers.Domain", "src\Modules\Teachers\Kursio.Modules.Teachers.Domain\Kursio.Modules.Teachers.Domain.csproj", "{30A07A2B-E972-4E00-BE41-5469A3868D9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Teachers.Application", "src\Modules\Teachers\Kursio.Modules.Teachers.Application\Kursio.Modules.Teachers.Application.csproj", "{483FF5F8-36B9-48E8-9A8F-06347D828570}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Teachers.Infrastructure", "src\Modules\Teachers\Kursio.Modules.Teachers.Infrastructure\Kursio.Modules.Teachers.Infrastructure.csproj", "{43F5AF53-150B-4193-B3B8-38B05C426BBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kursio.Modules.Teachers.Presentation", "src\Modules\Teachers\Kursio.Modules.Teachers.Presentation\Kursio.Modules.Teachers.Presentation.csproj", "{EDD0EC28-9B2F-4844-A293-85009FC0EA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kursio.Modules.Students.IntegrationEvents", "src\Modules\Students\Kursio.Modules.Students.IntegrationEvents\Kursio.Modules.Students.IntegrationEvents.csproj", "{64E62218-5734-44FB-8FBC-580105FFDB90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{978920BB-FC07-445F-A880-8AF64971403E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978920BB-FC07-445F-A880-8AF64971403E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978920BB-FC07-445F-A880-8AF64971403E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978920BB-FC07-445F-A880-8AF64971403E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7A0B8D1-BB05-4FEA-ACD3-C40EA33DF335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A0B8D1-BB05-4FEA-ACD3-C40EA33DF335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A0B8D1-BB05-4FEA-ACD3-C40EA33DF335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A0B8D1-BB05-4FEA-ACD3-C40EA33DF335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CA12B5-20F8-4996-9D31-760A723487F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CA12B5-20F8-4996-9D31-760A723487F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CA12B5-20F8-4996-9D31-760A723487F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CA12B5-20F8-4996-9D31-760A723487F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5012889-2D64-483D-84E8-3D7B4EFD3274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5012889-2D64-483D-84E8-3D7B4EFD3274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5012889-2D64-483D-84E8-3D7B4EFD3274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5012889-2D64-483D-84E8-3D7B4EFD3274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC04675-1B54-47E7-8B77-1E80422D75C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC04675-1B54-47E7-8B77-1E80422D75C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC04675-1B54-47E7-8B77-1E80422D75C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC04675-1B54-47E7-8B77-1E80422D75C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2998ACE9-7619-4273-9FB2-D3DF6224FE74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2998ACE9-7619-4273-9FB2-D3DF6224FE74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2998ACE9-7619-4273-9FB2-D3DF6224FE74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2998ACE9-7619-4273-9FB2-D3DF6224FE74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{363B4A28-D209-44F3-814D-3AF3A78B6E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363B4A28-D209-44F3-814D-3AF3A78B6E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363B4A28-D209-44F3-814D-3AF3A78B6E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363B4A28-D209-44F3-814D-3AF3A78B6E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57131A4F-0C68-4353-843F-AFA53592255A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57131A4F-0C68-4353-843F-AFA53592255A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57131A4F-0C68-4353-843F-AFA53592255A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57131A4F-0C68-4353-843F-AFA53592255A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30A07A2B-E972-4E00-BE41-5469A3868D9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30A07A2B-E972-4E00-BE41-5469A3868D9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30A07A2B-E972-4E00-BE41-5469A3868D9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30A07A2B-E972-4E00-BE41-5469A3868D9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483FF5F8-36B9-48E8-9A8F-06347D828570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483FF5F8-36B9-48E8-9A8F-06347D828570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483FF5F8-36B9-48E8-9A8F-06347D828570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483FF5F8-36B9-48E8-9A8F-06347D828570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43F5AF53-150B-4193-B3B8-38B05C426BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F5AF53-150B-4193-B3B8-38B05C426BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F5AF53-150B-4193-B3B8-38B05C426BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F5AF53-150B-4193-B3B8-38B05C426BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD0EC28-9B2F-4844-A293-85009FC0EA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD0EC28-9B2F-4844-A293-85009FC0EA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD0EC28-9B2F-4844-A293-85009FC0EA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD0EC28-9B2F-4844-A293-85009FC0EA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64E62218-5734-44FB-8FBC-580105FFDB90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64E62218-5734-44FB-8FBC-580105FFDB90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64E62218-5734-44FB-8FBC-580105FFDB90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64E62218-5734-44FB-8FBC-580105FFDB90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4F9C8574-93BB-4291-9A7A-169456B57CD9} = {DE948FD6-8356-44B2-9A52-5A7A0C297D02}
+		{2AAEF9D0-72DD-4017-ACF9-CC5939C4C8F1} = {DE948FD6-8356-44B2-9A52-5A7A0C297D02}
+		{5341A4EB-862E-4B5F-B8A5-730193333919} = {2AAEF9D0-72DD-4017-ACF9-CC5939C4C8F1}
+		{978920BB-FC07-445F-A880-8AF64971403E} = {4F9C8574-93BB-4291-9A7A-169456B57CD9}
+		{95CA12B5-20F8-4996-9D31-760A723487F5} = {5341A4EB-862E-4B5F-B8A5-730193333919}
+		{D5012889-2D64-483D-84E8-3D7B4EFD3274} = {5341A4EB-862E-4B5F-B8A5-730193333919}
+		{17A3B5E5-66C8-4C4B-BCE7-7705F21C1D1D} = {5341A4EB-862E-4B5F-B8A5-730193333919}
+		{ADC04675-1B54-47E7-8B77-1E80422D75C7} = {5341A4EB-862E-4B5F-B8A5-730193333919}
+		{67A5750F-817A-407F-ABD3-FF49896AE9BB} = {DE948FD6-8356-44B2-9A52-5A7A0C297D02}
+		{7DC2B5C0-DDF9-4BFD-9D65-2145CFF328CF} = {67A5750F-817A-407F-ABD3-FF49896AE9BB}
+		{2998ACE9-7619-4273-9FB2-D3DF6224FE74} = {67A5750F-817A-407F-ABD3-FF49896AE9BB}
+		{363B4A28-D209-44F3-814D-3AF3A78B6E8E} = {67A5750F-817A-407F-ABD3-FF49896AE9BB}
+		{57131A4F-0C68-4353-843F-AFA53592255A} = {67A5750F-817A-407F-ABD3-FF49896AE9BB}
+		{FC6F479B-8A5D-4E95-966B-BD589790D541} = {2AAEF9D0-72DD-4017-ACF9-CC5939C4C8F1}
+		{30A07A2B-E972-4E00-BE41-5469A3868D9A} = {FC6F479B-8A5D-4E95-966B-BD589790D541}
+		{483FF5F8-36B9-48E8-9A8F-06347D828570} = {FC6F479B-8A5D-4E95-966B-BD589790D541}
+		{43F5AF53-150B-4193-B3B8-38B05C426BBA} = {FC6F479B-8A5D-4E95-966B-BD589790D541}
+		{EDD0EC28-9B2F-4844-A293-85009FC0EA64} = {FC6F479B-8A5D-4E95-966B-BD589790D541}
+		{64E62218-5734-44FB-8FBC-580105FFDB90} = {5341A4EB-862E-4B5F-B8A5-730193333919}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E37B71B-D7B0-47BC-B9D3-7E5D4CD2A704}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,62 @@
+version: '3.9'
+
+services:
+  kursio.api:
+    image: ${DOCKER_REGISTRY-}kursioapi
+    container_name: Kursio.Api
+    build:
+      context: .
+      dockerfile: src/API/Kursio.Api/Dockerfile
+    ports:
+      - 5000:8080
+      - 5001:8081
+  
+  kursio.database:
+    image: postgres:latest
+    container_name: Kursio.Database
+    environment:
+      - POSTGRES_DB=kursio
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - ./.containers/db:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+
+  kursio.seq:
+    image: datalust/seq:latest
+    container_name: Kursio.Seq
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - 5341:5341
+      - 8081:80
+
+  kursio.redis:
+    image: redis:latest
+    container_name: Kursio.Redis
+    restart: always
+    ports:
+      - 6379:6379
+
+  kursio.queue:
+    image: rabbitmq:management-alpine
+    container_name: Kursio.Queue
+    hostname: kursio-queue
+    volumes:
+      - ./.containers/queue/data/:/var/lib/rabbitmq
+      - ./.containers/queue/log/:/var/lib/rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - 5672:5672
+      - 15672:15672
+
+  kursio.jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: Kursio.Jaeger
+    ports:
+      - 4317:4317
+      - 4318:4318
+      - 16686:16686
