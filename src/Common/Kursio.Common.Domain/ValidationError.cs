@@ -1,18 +1,11 @@
 ﻿namespace Kursio.Common.Domain;
 
-public sealed record ValidationError : Error
+public sealed record ValidationError(Error[] Errors) : Error("General.Validation",
+    "One or more validation errors occurred",
+    ErrorType.Validation)
 {
-    public ValidationError(Error[] errors)
-        : base(
-            "General.Validation",
-            "One or more validation errors occurred",
-            ErrorType.Validation)
+    public static ValidationError FromResults(IEnumerable<Result> results)
     {
-        Errors = errors;
+        return new ValidationError(results.Where(r => r.IsFailure).Select(r => r.Error).ToArray());
     }
-
-    public Error[] Errors { get; }
-
-    public static ValidationError FromResults(IEnumerable<Result> results) =>
-        new(results.Where(r => r.IsFailure).Select(r => r.Error).ToArray());
 }

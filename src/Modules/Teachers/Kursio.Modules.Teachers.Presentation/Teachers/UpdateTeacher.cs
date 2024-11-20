@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
 namespace Kursio.Modules.Teachers.Presentation.Teachers;
-internal sealed class UpdateTeacher: IEndpoint
+internal sealed class UpdateTeacher : IEndpoint
 {
     public void MapEndpoint(IEndpointRouteBuilder app)
     {

@@ -7,7 +7,7 @@ internal sealed class TeacherRepository(TeachersDbContext dbContext) : ITeacherR
 {
     public async Task InsertAsync(Teacher teacher, CancellationToken cancellationToken = default)
     {
-        await dbContext.AddAsync(teacher, cancellationToken); 
+        await dbContext.AddAsync(teacher, cancellationToken);
     }
 
     public async Task<Teacher?> FindAsync(Guid id)

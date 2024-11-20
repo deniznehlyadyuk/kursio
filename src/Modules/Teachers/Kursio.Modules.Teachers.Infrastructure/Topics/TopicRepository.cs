@@ -7,7 +7,7 @@ internal sealed class TopicRepository(TeachersDbContext dbContext) : ITopicRepos
 {
     public async Task InsertAsync(Topic topic, CancellationToken cancellationToken = default)
     {
-        await dbContext.AddAsync(topic, cancellationToken); 
+        await dbContext.AddAsync(topic, cancellationToken);
     }
 
     public async Task<Topic?> FindByNameAsync(string name, CancellationToken cancellationToken = default)
